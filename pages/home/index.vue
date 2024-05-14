@@ -9,7 +9,7 @@
       </tr>
       </thead>
       <tbody>
-      <tr v-for="data in tableData">
+      <tr v-for="(data, index) in tableData" :key="index">
         <td>{{ data.region }}</td>
         <td>{{ data.subscribers }}</td>
       </tr>
@@ -60,11 +60,13 @@ td {
   border: 1px solid;
   padding: .5rem;
 }
-th{
+
+th {
   background-color: blueviolet;
   color: white;
 }
-.general{
+
+.general {
   background-color: seagreen;
   color: white;
 }
