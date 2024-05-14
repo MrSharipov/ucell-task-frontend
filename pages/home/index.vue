@@ -11,7 +11,7 @@
       <tbody>
       <tr v-for="(data, index) in tableData" :key="index">
         <td>{{ data.region }}</td>
-        <td>{{ data.subscribers }}</td>
+        <td>{{ data.totalsubscribers }}</td>
       </tr>
       </tbody>
       <tfoot>
